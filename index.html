@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Story Teller</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body class="wrapper">
+	<header class="header">
+		<img src="formAStory.svg" alt="FORM-A-STORY">
+	</header>
+	<main class="main">
+		<h2 class="heading">Complete the Form - Complete the Story!</h2>
+		<form method="post" action="story.html">
+			<div>
+				<label>Animal:</label>
+				<input type="text" id="one" value="Tiger">
+			</div>
+			<div>
+				<label>Another Animal:</label>
+				<input type="text" id="two" value="Lion">
+			</div>
+			<div>
+				<label>One More Animal:</label>
+				<input type="text" id="three" value="Dog">
+			</div>
+			<div>
+				<label>Adjective (past tense):</label>
+				<input type="text" id="adj" value="alarmed">
+			</div>
+			<div>
+				<label>Verb (ends in -ing):</label>
+				<input type="text" id="verb" value="running">
+			</div>
+			<div>
+				<label>Number:</label>
+				<input type="number" id="number" value="2">
+			</div>
+			<div>
+				<label>Yes or No:</label>
+				<input type="radio" name="yesNo" id="yes" checked><label>Yes</label>
+				<input type="radio" name="yesNo" id="no"><label>No</label>
+			</div>
+			<div>
+				<label>Relative speed (ends in -er):</label>
+				<select id="speed">
+					<option value="quicker">Quicker</option>
+					<option value="slower">Slower</option>
+					<option value="faster">Faster</option>
+				</select>
+			</div>
+			<div>
+				<label>Motivational Quote:</label>
+				<input type="text" id="quote" value="example">
+			</div>
+			<div>
+				<label>Meaningful Message:</label><br>
+				<textarea id="message" rows="4">Message</textarea>
+			</div>
+			<input type="submit" onclick="submitForm()" value="Form My Story!">
+		</form>
+	</main>
+</body>
+</html>
